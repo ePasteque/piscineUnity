@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Button text="Yes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Yes" style="top: 40%; align-self: center;" />
+    <ui:Button text="No" parse-escape-sequences="true" display-tooltip-when-elided="true" name="No" style="top: 45%; align-self: center;" />
+</ui:UXML>

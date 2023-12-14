@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Main" style="flex-grow: 1;">
+        <ui:VisualElement name="Shop" style="flex-grow: 1; align-self: flex-start; align-items: flex-start; background-color: rgb(123, 119, 119); height: 469px; width: 257px; bottom: auto; top: 82%; left: 5%;">
+            <ui:VisualElement name="FastTouret" style="flex-grow: 1; height: 60px; width: 60px; align-self: stretch; background-image: url(&apos;project://database/Assets/ExportModule02/touretsprite.png?fileID=-1283552999&amp;guid=6e342d4cb5ab3ed54a97fa81c1170232&amp;type=3#touretsprite_5&apos;); -unity-slice-scale: 1px; -unity-background-scale-mode: stretch-to-fill; bottom: 500px; position: absolute; left: 14px;" />
+            <ui:VisualElement name="MediumTouret" style="flex-grow: 1; height: 60px; width: 60px; align-self: center; justify-content: space-around; flex-direction: column-reverse; background-image: url(&apos;project://database/Assets/ExportModule02/touretsprite.png?fileID=-449433560&amp;guid=6e342d4cb5ab3ed54a97fa81c1170232&amp;type=3#touretsprite_0&apos;); bottom: 500px; position: absolute; left: 104px;" />
+            <ui:VisualElement name="SlowTouret" style="flex-grow: 1; height: 60px; align-self: flex-end; -unity-slice-scale: 1px; flex-direction: column; left: 194px; bottom: 500px; background-image: url(&apos;project://database/Assets/ExportModule02/touretsprite.png?fileID=-143360889&amp;guid=6e342d4cb5ab3ed54a97fa81c1170232&amp;type=3#touretsprite_3&apos;); position: absolute; align-items: auto; width: 60px;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Dmg : 0.1&#x9;&#x9;0.2&#x9;&#x9;0.3&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="left: 6%; height: 13px; width: 337px;" />
+        <ui:Label tabindex="-1" text="Cost : 5&#x9;&#x9;3&#x9;&#x9;1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 23px; width: 59px; left: 6%;" />
+    </ui:VisualElement>
+</ui:UXML>

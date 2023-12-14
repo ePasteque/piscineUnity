@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(86, 39, 124);">
+        <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" style="top: 40%; width: 50%; align-items: stretch; align-self: center;" />
+        <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exit" style="top: 45%; width: 50%; align-self: center;" />
+    </ui:VisualElement>
+</ui:UXML>

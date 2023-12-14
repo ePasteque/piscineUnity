@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Button text="Resume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Resume" style="align-self: center; top: 40%; background-color: rgb(188, 188, 188);" />
+    <ui:Button text="Quit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Quit" style="align-self: center; top: 45%;" />
+</ui:UXML>

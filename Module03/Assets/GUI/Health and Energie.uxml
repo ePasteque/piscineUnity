@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:ProgressBar value="5" title="Health" name="HealthBar" high-value="5" focusable="false" style="align-self: flex-end; justify-content: flex-start; -unity-background-image-tint-color: rgb(243, 38, 38); background-color: rgba(241, 27, 27, 0); align-items: stretch; -unity-slice-scale: 1px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; height: 41px; width: 272px; bottom: -95%;" />
+    <ui:ProgressBar value="15" title="Energy" name="EnergyBar" high-value="15" style="bottom: -505px; align-items: stretch; height: 529px; width: 272px; align-self: flex-end;" />
+</ui:UXML>
