@@ -48,6 +48,5 @@ public class PauseMenuButtons : MonoBehaviour
         // Application.Quit();
         pauseMenu.SetActive(false);
         confirmQuit.SetActive(true);
-        outsideBounds.SetActive(false);
     }
 }

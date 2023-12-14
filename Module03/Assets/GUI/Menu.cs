@@ -34,6 +34,5 @@ public class Menu : MonoBehaviour
     void QuitGame(ClickEvent evt)
     {
         Debug.Log("Quit Game");
-        Application.Quit();
     }
 }

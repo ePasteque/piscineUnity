@@ -74,7 +74,6 @@ public class Shop : MonoBehaviour
             onDrag = true;
             Debug.Log("SlowTouret");
             actualTouret = Instantiate(slowTouretPrefab);
-            GameObject.Find("actualTouret").SetActive(false);
         }
     }
 
