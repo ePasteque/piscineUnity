@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(158, 11, 11);">
+        <ui:Label tabindex="-1" text="CATARPILLAR" parse-escape-sequences="true" display-tooltip-when-elided="true" style="position: absolute; right: 734px; width: 53px; font-size: 75px; color: rgb(198, 198, 198); top: 78px;" />
+        <ui:Label tabindex="-1" text="MISSION : IMPOSSIBLE" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 84px; right: -12%; top: 27%; height: 126px; width: 930px;" />
+        <ui:Button text="NewGame" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewGame" style="position: absolute; left: 49.4%; top: 50%;" />
+        <ui:Button text="Resume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Resume" style="position: absolute; top: 60%; left: 50%;" />
+        <ui:Button text="Diary" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Diary" style="position: absolute; left: 50.5%; top: 70%;" />
+    </ui:VisualElement>
+</ui:UXML>

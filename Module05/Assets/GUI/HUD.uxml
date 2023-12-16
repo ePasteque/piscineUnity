@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label tabindex="-1" text="HP : " parse-escape-sequences="true" display-tooltip-when-elided="true" name="HP" style="height: 25px; width: 43px; font-size: 18px; left: 100px; position: absolute;" />
+    <ui:Label tabindex="-1" text="Score : " parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score" style="height: 23px; width: 79px; font-size: 18px; position: absolute; left: 200px;" />
+</ui:UXML>
