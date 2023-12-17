@@ -24,6 +24,6 @@ public class HUD : MonoBehaviour
     void Update()
     {
         hp.text = "HP: " + GameManager.health;
-        score.text = "Score: " + GameManager.ttPoints;
+        score.text = "Score: " + GameManager.Points;
     }
 }

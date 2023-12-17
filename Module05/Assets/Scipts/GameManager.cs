@@ -13,12 +13,15 @@ public class GameManager : MonoBehaviour
     public static string[] nameLeaf;
     public static int nb_leaf = 0;
     public static int health = 3;
-    public static int ttPoints = 0;
+    public static int Points = 0;
     private static int stage;
     private static string stageName;
     public static bool isNewGame = true;
     // private static bool isInGame = false;
+    public static int ttPoints = 0;
+    public static bool allStage = false;
     public static int death = 0;
+    public static string maxStage;
     private void Awake()
     {
         if (_instance == null && _instance != this)
@@ -34,7 +37,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("ttPoints", ttPoints);
+        PlayerPrefs.SetInt("Points", Points);
         PlayerPrefs.SetInt("health", health);
         PlayerPrefs.SetInt("death", death);
         PlayerPrefs.SetString("stage", "Stage1");
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     public static void AddPoints(int points)
     {
+        Points += points;
         ttPoints += points;
     }
 
@@ -56,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         // if (!isInGame)
         //     return;
-        ttPoints = PlayerPrefs.GetInt("ttPoints");
+        Points = PlayerPrefs.GetInt("Points");
         health = PlayerPrefs.GetInt("health");
         Debug.Log("health get: " + health);
         stageName = PlayerPrefs.GetString("stage");
@@ -67,12 +71,14 @@ public class GameManager : MonoBehaviour
     public static void NewGame()
     {
         PlayerPrefs.DeleteAll();
-        ttPoints = 0;
+        Points = 0;
         health = 3;
         stage = 1;
         death = 0;
         isNewGame = true;
-        // isInGame = true;
+        allStage = false;
+        ttPoints = 0;
+        maxStage = "Stage1";
         SceneManager.LoadScene("Stage1");
     }
 
@@ -91,10 +97,19 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt("isTaken" + i, 0);
             }
         }
-        PlayerPrefs.SetString("stage", SceneManager.GetActiveScene().name);
-        PlayerPrefs.SetInt("ttPoints", ttPoints);
+        string stageName = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("stage", stageName);
+        // if (stageName == "Stage3") {
+        //     Debug.Log("allStage");
+        //     allStage = true;
+        // }
+        if (int.Parse(SceneManager.GetActiveScene().name[5].ToString()) > int.Parse(GameManager.maxStage[5].ToString()))
+            maxStage = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetInt("Points", Points);
         PlayerPrefs.SetInt("health", health);
         PlayerPrefs.SetInt("death", death);
+        PlayerPrefs.SetInt("ttPoints", ttPoints);
+        PlayerPrefs.SetString("maxStage", maxStage);
         PlayerPrefs.Save();
         SceneManager.LoadScene("MainMenu");
     }
@@ -109,9 +124,9 @@ public class GameManager : MonoBehaviour
         }
         PlayerPrefs.DeleteAll();
         nb_leaf = 0;
-        ttPoints = 0;
+        Points = 0;
         health = 3;
-        PlayerPrefs.SetInt("ttPoints", ttPoints);
+        PlayerPrefs.SetInt("Points", Points);
         PlayerPrefs.SetInt("health", health);
         PlayerPrefs.SetString("stage", SceneManager.GetActiveScene().name);
         PlayerPrefs.Save();

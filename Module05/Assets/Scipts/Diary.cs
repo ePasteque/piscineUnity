@@ -42,11 +42,11 @@ public class Diary : MonoBehaviour
     {
         death.text = PlayerPrefs.GetInt("death").ToString();
         score.text = PlayerPrefs.GetInt("ttPoints").ToString();
-        stage = PlayerPrefs.GetString("stage");
-        if (stage == "Stage1") {
+        stage = PlayerPrefs.GetString("maxStage");
+        if (stage == "Stage1" && !GameManager.allStage) {
             stage2.style.unityBackgroundImageTintColor = new Color(0, 0, 0, 0);
             stage3.style.unityBackgroundImageTintColor = new Color(0, 0, 0, 0);
-        } else if (stage == "Stage2") {
+        } else if (stage == "Stage2" && !GameManager.allStage) {
             stage3.style.unityBackgroundImageTintColor = new Color(0, 0, 0, 0);
         }        
     }
