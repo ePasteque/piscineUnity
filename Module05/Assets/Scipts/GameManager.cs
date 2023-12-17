@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private static int stage;
     private static string stageName;
     public static bool isNewGame = true;
-    private static bool isInGame = false;
+    // private static bool isInGame = false;
     public static int death = 0;
     private void Awake()
     {
@@ -54,8 +54,8 @@ public class GameManager : MonoBehaviour
 
     public static void ResumeGame()
     {
-        if (!isInGame)
-            return;
+        // if (!isInGame)
+        //     return;
         ttPoints = PlayerPrefs.GetInt("ttPoints");
         health = PlayerPrefs.GetInt("health");
         Debug.Log("health get: " + health);
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         stage = 1;
         death = 0;
         isNewGame = true;
-        isInGame = true;
+        // isInGame = true;
         SceneManager.LoadScene("Stage1");
     }
 
