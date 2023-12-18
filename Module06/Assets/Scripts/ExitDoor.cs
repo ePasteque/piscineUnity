@@ -12,6 +12,7 @@ public class ExitDoor1 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log(GameManager.nb_keys);
             if (GameManager.nb_keys >= 3 && !isOpen)
             {
                 animator.SetTrigger("Open");

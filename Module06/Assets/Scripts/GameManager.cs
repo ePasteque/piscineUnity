@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
         } else
         {
             deathAudio.Play();
+            nb_keys = 0;
             GameObject.Find("EndGame").GetComponent<EndGame>().end(gameOverTexture);
         }
         isGameOver = true;
